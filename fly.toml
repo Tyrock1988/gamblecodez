@@ -1,10 +1,19 @@
-app = "gamblecodez-app"
+app = "gamblecodez"
 
 [build]
-  builder = "paketobuildpacks/builder:base"
+  image = "node:18"
 
 [env]
-  NODE_ENV = "production"
+  PORT = "3000"
+  ADMIN_USER = "Admin"
+  ADMIN_PASS = "Pink2222"
 
-[experimental]
-  auto_rollback = true
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+
+  [[services.ports]]
+    port = 443
