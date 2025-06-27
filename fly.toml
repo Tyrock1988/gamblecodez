@@ -1,0 +1,10 @@
+app = "gamblecodez-app"
+
+[build]
+  builder = "paketobuildpacks/builder:base"
+
+[env]
+  NODE_ENV = "production"
+
+[experimental]
+  auto_rollback = true
