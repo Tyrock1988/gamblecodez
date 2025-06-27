@@ -1,4 +1,4 @@
-app = "gamblecodez"
+ app = "gamblecodez"
 
 [build]
   image = "node:18"
